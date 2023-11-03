@@ -3,6 +3,12 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
+a {background-color: white;
+  text-transform: none;
   color: #00B7FF;
+}
+
+#index{
+  
+  background-image: url("/public/images/cinema.jpg");
 }
