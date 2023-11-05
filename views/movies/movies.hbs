@@ -1,0 +1,21 @@
+<div>
+  <div class="flexed" style="flex-direction: column">
+    <h1>Ironhack Cinema</h1>
+    <h3>Click on the movie to check the showtimes!</h3>
+  </div>
+  <div id="movies">
+
+    {{#each this.response}}
+
+      <div class="flex-card">
+        <img src="{{this.image}}" alt="movieImage" />
+
+        <h4>{{this.title}}</h4>
+
+        <a href="/movies/{{this.id}}">See more</a>
+      </div>
+
+    {{/each}}
+
+  </div>
+</div>

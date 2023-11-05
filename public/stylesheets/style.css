@@ -1,14 +1,111 @@
 body {
+  background-color: #fa907a;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {background-color: white;
+.button {
+  background-color: white;
+  text-decoration: none;
   text-transform: none;
-  color: #00B7FF;
+  color: #00b7ff;
+  padding: 20px 40px;
+  border-radius: 20px;
+  margin: 70px 350px 400px 50%;
+  font-size: 20px;
+  justify-content: end;
+  text-align: center;
+}
+.button:hover {
+  color: #00b7ff73;
 }
 
-#index{
+.flex-card {
+  box-shadow: 10px 10px rgb(129, 115, 98);
+  background-color: bisque;
+  border-radius: 25px;
+  border-style: double;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  margin: 40px;
+  flex-wrap: nowrap;
+  padding: 40px 0;
+}
+
+.flex {
+  position: fixed;
+  border-radius: 10px;
+  background-color: bisque;
+  box-shadow: 10px 10px rgb(129, 115, 98);
+  display: flex;
+  padding: 20px;
+  border-style: double;
+}
+
+.columnFlex {
+  background-color: rgb(255, 245, 196);
   
-  background-image: url("/public/images/cinema.jpg");
+  padding: 20px;
+  border-style: solid;
+  border-radius: 50px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.flexed a {
+  transition-duration: 0.5s;
+  background-color: #00b7ff;
+  border-radius: 100px;
+  border-style: solid;
+  color: white;
+  text-decoration: none;
+  padding: 40px;
+  margin: -30px 0 30px 0;
+}
+.flexed a:hover {
+  background-color: #00b7ff75;
+  box-shadow: 10px 10px rgb(129, 115, 98);
+  margin: -20px 0 20px 0;
+}
+.flexed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex img {
+  border-radius: 10px;
+  border: double;
+}
+.columnFlex h4,
+p {
+  margin: 0 0 10px 0;
+}
+
+#movies {
+  border-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#index {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  background-image: url("../images/cinema.jpg");
+  background-size: cover;
+}
+
+#index h1 {
+  color: white;
+  font-size: 150px;
+  margin: 100px 20px 0 70%;
+}
+
+ul {
+  margin-left: -25px;
 }
